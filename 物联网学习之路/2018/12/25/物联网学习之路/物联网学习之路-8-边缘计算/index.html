@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/blog/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/blog/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/blog/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/blog/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/blog/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/blog/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/blog/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="TitanRtx 个人博客  物联网">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="先放松一下吧！    前记： 最近一直沉迷于各种新兴技术或者正在发展的新技术，每一种技术的提出都是为了解决更实际的问题，科学技术发展日新月异，笔者在此也感受到科技的魅力所在，而今天要说的边缘计算也正是为了解决一个日益突出的问题—日益增长的计算量需求和对响应时间的需求，为此提出了边缘计算，将部分计算转移到靠近终端侧。笔者之所以要写这个，其实之前并没有多大了解，之前呢。一直在研究物联网、区块链、智能的">
+<meta property="og:type" content="article">
+<meta property="og:title" content="物联网学习之路-8-边缘计算、雾计算与物联网">
+<meta property="og:url" content="https://titanrtx.github.io/blog/物联网学习之路/2018/12/25/物联网学习之路/物联网学习之路-8-边缘计算/index.html">
+<meta property="og:site_name" content="TitanRtx Blog">
+<meta property="og:description" content="先放松一下吧！    前记： 最近一直沉迷于各种新兴技术或者正在发展的新技术，每一种技术的提出都是为了解决更实际的问题，科学技术发展日新月异，笔者在此也感受到科技的魅力所在，而今天要说的边缘计算也正是为了解决一个日益突出的问题—日益增长的计算量需求和对响应时间的需求，为此提出了边缘计算，将部分计算转移到靠近终端侧。笔者之所以要写这个，其实之前并没有多大了解，之前呢。一直在研究物联网、区块链、智能的">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://img.mp.itc.cn/upload/20170418/7171224f6dcf47e5bed836978c91aa29_th.jpeg">
+<meta property="og:image" content="https://gss2.bdstatic.com/9fo3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268%3Bg%3D0/sign=c3202161bcfd5266a72b3b129323f016/11385343fbf2b211d1f8a8c4c08065380dd78e61.jpg">
+<meta property="og:updated_time" content="2018-12-26T04:14:24.181Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="物联网学习之路-8-边缘计算、雾计算与物联网">
+<meta name="twitter:description" content="先放松一下吧！    前记： 最近一直沉迷于各种新兴技术或者正在发展的新技术，每一种技术的提出都是为了解决更实际的问题，科学技术发展日新月异，笔者在此也感受到科技的魅力所在，而今天要说的边缘计算也正是为了解决一个日益突出的问题—日益增长的计算量需求和对响应时间的需求，为此提出了边缘计算，将部分计算转移到靠近终端侧。笔者之所以要写这个，其实之前并没有多大了解，之前呢。一直在研究物联网、区块链、智能的">
+<meta name="twitter:image" content="http://img.mp.itc.cn/upload/20170418/7171224f6dcf47e5bed836978c91aa29_th.jpeg">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/blog/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://titanrtx.github.io/blog/物联网学习之路/2018/12/25/物联网学习之路/物联网学习之路-8-边缘计算/">
+
+
+
+
+
+  <title>物联网学习之路-8-边缘计算、雾计算与物联网 | TitanRtx Blog</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/blog/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">TitanRtx Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/blog/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            最新文章
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-asset">
+          <a href="/blog/资源/asset.html" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-file"></i> <br>
+            
+            参考资源
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/blog/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/blog/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/blog/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            所有文章
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-blockchain">
+          <a href="/blog/categories/区块链/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-chain"></i> <br>
+            
+            区块链
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-datascience">
+          <a href="/blog/categories/数据分析/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-area-chart"></i> <br>
+            
+            数据分析
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-iot">
+          <a href="/blog/categories/物联网学习之路/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-rocket"></i> <br>
+            
+            物联网学习之路
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://titanrtx.github.io/blog/blog/物联网学习之路/2018/12/25/物联网学习之路/物联网学习之路-8-边缘计算/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="TitanRtx">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/blog/images/headphoto.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="TitanRtx Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">物联网学习之路-8-边缘计算、雾计算与物联网</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-25T21:44:11+08:00">
+                2018-12-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/blog/categories/物联网学习之路/" itemprop="url" rel="index">
+                    <span itemprop="name">物联网学习之路</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><div style="text-align:center">先放松一下吧！</div></p>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=454966209&auto=1&height=66"></iframe> 
+
+<h3 id="前记："><a href="#前记：" class="headerlink" title="前记："></a>前记：</h3><blockquote>
+<p>最近一直沉迷于各种新兴技术或者正在发展的新技术，每一种技术的提出都是为了解决更实际的问题，科学技术发展日新月异，笔者在此也感受到科技的魅力所在，而今天要说的边缘计算也正是为了解决一个日益突出的问题—日益增长的计算量需求和对响应时间的需求，为此提出了边缘计算，将部分计算转移到靠近终端侧。笔者之所以要写这个，其实之前并没有多大了解，之前呢。一直在研究物联网、区块链、智能的融合应用，前几天晚上正在修仙的时候，突然看到一个已经过去两周的新闻——12月7日百度的边缘计算平台开源公测！ 当时也是有过这样的概念，但是没有想到已经有开始落实了，这几天静下来想看看到底是什么样的行情了，能不能用来实用。本篇文章更多的是对一些网络上的概念的收集与整合，附加自己的一点点理解。</p>
+</blockquote>
+<p>随着物联网的发展，经常听到「雾计算」和「边缘计算」这样的单词。</p>
+<p>雾计算这个词相对来说是最近出现的一个词。因为和云相比位置上更接近设备，所以表示为雾，它是作为实现IoT的结构为Cisco等提倡，旨在为全球范围所采用。另一方面，边缘计算这个术语，早就用于表示云和设备的边界。</p>
+<h3 id="什么是雾计算？"><a href="#什么是雾计算？" class="headerlink" title="什么是雾计算？"></a>什么是雾计算？</h3><p>雾计算的概念在2011年被人提出，在2012年被作了详细定义。正如云计算一样，雾计算也定义得十分形象。云是高高的天上，十分抽象，而雾则接近地面，与你我同在。雾计算没有强力的计算能力，只有一些弱的，零散的计算设备。<br><img src="http://img.mp.itc.cn/upload/20170418/7171224f6dcf47e5bed836978c91aa29_th.jpeg" alt=""></p>
+<blockquote>
+<p>雾计算（Fog Computing），在该模式中数据、（数据）处理和应用程序集中在网络边缘的设备中，而不是几乎全部保存在云中，是云计算（Cloud Computing）的延伸概念，由思科（Cisco）提出的。这个因“云”而“雾”的命名源自“雾是更贴近地面的云”这一名句。</p>
+</blockquote>
+<p>雾计算和云计算完全不同。云计算是以IT运营商服务，社会公有云为主的。雾计算以量制胜，强调数量，不管单个计算节点能力多么弱都要发挥作用。云计算则强调整体计算能力，一般由一堆集中的高性能计算设备完成计算。雾计算扩大了云计算的网络计算模式，将网络计算从网络中心扩展到了网络边缘，从而更加广泛地应用于各种服务。雾计算有几个明显特征：低延时和位置感知，更为广泛的地理分布，适应移动性的应用，支持更多的边缘节点。这些特征使得移动业务部署更加方便，满足更广泛的节点接入。 </p>
+<h3 id="边缘计算的概念"><a href="#边缘计算的概念" class="headerlink" title="边缘计算的概念"></a>边缘计算的概念</h3><blockquote>
+<p>边缘计算是指在靠近物或数据源头的一侧，采用网络、计算、存储、应用核心能力为一体的开放平台，就近提供最近端服务。其应用程序在边缘侧发起，产生更快的网络服务响应，满足行业在实时业务、应用智能、安全与隐私保护等方面的基本需求。边缘计算处于物理实体和工业连接之间，或处于物理实体的顶端。<br><img src="https://gss2.bdstatic.com/9fo3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268%3Bg%3D0/sign=c3202161bcfd5266a72b3b129323f016/11385343fbf2b211d1f8a8c4c08065380dd78e61.jpg" alt=""><br>边缘计算（edge computing）是指一种在网络边缘进行计算的新型计算模式，其对数据的处理主要包括两部分：其一是下行的云服务，其二是上行的万物互联服务。其中，边缘计算当中的“边缘”是一个相对的概念，主要是指从数据源到云计算中心路径之间的任意计算、存储以及网络相关资源。我们可以将这条路径上的资源看作是一个连续统一体。</p>
+</blockquote>
+<h3 id="为什么选择边缘计算？"><a href="#为什么选择边缘计算？" class="headerlink" title="为什么选择边缘计算？"></a>为什么选择边缘计算？</h3><p>目前相对于物联网应用来说，传统的云计算架构面临的两个问题：负载量、时延。</p>
+<p>前面已经提到了，随着物联网时代的到来，联网设备会越来越多，为数据中心带来了更多的负载需求，仅仅靠数据中心想满足未来的数据服务诉求，那么</p>
+<p>数据中心需要扩展的更大、更大，维护、更新、扩展都不是很方便。另一方面，近年来，计算工作负载一直在迁移：先是从本地数据中心迁移到云，现在日益从云数据中心迁移到更靠近所处理的数据源的“边缘”位置。旨在缩短数据的传输距离，从而消除带宽和延迟问题，最终提升应用和服务的性能和可靠性，并降低运行成本。</p>
+<p>这倒不是说本地环境或云中心已死亡，一些数据总是需要存储在集中的地方并加以处理。但数字基础设施无疑在发生变化。比如据Gartner声称，到2025年，80%的企业将关闭传统数据中心，而2018年这个比例只有10%。工作负载的布置是这次基础设施演变的关键驱动因素，工作负载的布置有赖于各种业务需求。</p>
+<p>随着最近业务驱动的IT项目不断增加（通常超出传统IT预算的范围），实施物联网解决方案、边缘计算环境和“非传统”IT的现象在迅速增多。此外日益关注面向外部的应用的客户体验，并日益关注糟糕的客户体验给企业声誉带来的直接影响。关注外部的这种形势导致许多企业组织基于网络延迟、客户群体和地缘政治限制因素（比如欧盟的《通用数据保护条例》即GDPR或监管方面的限制），重新考虑某些应用的布置。<br>当然，边缘计算面临挑战，尤其是连接方面（连接断断续续），具体表现为网络边缘处带宽低及/或延迟高。如果大量智能边缘设备运行的软件（比如机器学习应用）需要与中央云服务器或“雾计算”中的节点进行联系，这就会出现问题。然而，解决方案正在开发中。</p>
+<h3 id="边缘计算、雾计算的发展以及关系"><a href="#边缘计算、雾计算的发展以及关系" class="headerlink" title="边缘计算、雾计算的发展以及关系"></a>边缘计算、雾计算的发展以及关系</h3><p>边缘计算的起源可以追溯到上个世纪90年代，当时Akamai推出了内容传送网络(CDN)，该网络在接近终端用户设立了传输节点。这些节点能够存储缓存的静态内容，如图像和视频等。</p>
+<p>边缘计算通过允许节点执行基本的计算任务来进一步理解这一概念。1997年，计算机科学家BrianNoble演示了移动技术如何将边缘计算用于语音识别，两年后这种方式也被用来延长手机电池的寿命。当时这一过程被称为“cyberforaging”，这也是苹果的Siri和Google的语音识别的工作原理。　</p>
+<p>1999年出现了点对点计算(peer-to-peercomputing)，随着2006年亚马逊公司发布了EC2服务的发布，云计算正式问世，自此以后各大规模的企业纷纷采用云计算。</p>
+<p>2009年发布了移动计算汇总的基于虚拟机的Cloudlets案例详细介绍了延迟与云计算之间的端到端关系。该文提出了两级架构的概念：第一级是云计算基础设施，第二级是由分布式云元素构成的cloudlet。这是现代边缘计算的很多方面的理论基础。</p>
+<p>2012年思科推出了旨在提升物联网可扩展性的分布式云计算基础设施“雾计算”。　　雾计算的概念中有很多是目前我们理解的边缘计算的理念，包括纯分布式系统，如区块链、点对点或混合系统，其中比较典型的是AWS的Lambda@Edge、Greengrass和MicrosoftAzureIoTEdge。</p>
+<p>边缘计算目前已经成为推动采用物联网的关键技术。　</p>
+<p>任何新的IT项目都需要标准和最佳实践，而早期阶段的特点常常是多家组织和联盟林立，它们的工作议程各不相同（尽管成员常常存在很大的重叠）。边缘/雾计算也不例外。</p>
+<p>雾计算是思科杜撰的一个术语，得到了开放雾联盟的支持，该联盟由Arm、思科、戴尔、英特尔、微软和普林斯顿大学边缘实验室于2015年共同成立。其使命内容如下（部分）：</p>
+<p>我们致力于定义涵盖分布式计算、网络、存储、控制和资源的一种架构，以支持物联网边缘处的智能，包括自我感知的自主机器、物件、设备和智能对象。开放雾联盟的成员还将确定和开发新的运营模式。最终，我们的工作将有助于实现和推动下一代物联网。</p>
+<p>边缘计算由Linux基金会主持的开源项目EdgeX Foundry负责推广。EdgeX Foundry的目标包括：构建和推广EdgeX成为统一物联网边缘计算的通用平台，认证EdgeX组件以确保互操作性和兼容性，提供快速创建基于EdgeX的物联网边缘解决方案的工具，并与相关的开源项目、标准组织和行业联盟合作。</p>
+<p>据EdgeX Foundry声称：“该项目注重的是边缘节点，比如嵌入式PC、集线器、网关、路由器和本地服务器，以克服分布式物联网雾架构中互操作性方面的重大挑战。”</p>
+<p>EdgeX Foundry的技术指导委员会包括来自IOTech、ADI、Mainflux、戴尔、Linux基金会、三星电子、VMware和Canonical的代表。</p>
+<p>这个领域还有另外两大行业机构：一个是注重日本市场的EdgeCross联盟，由欧姆龙公司、Advantech、NEC、IBM日本、Oracle日本和三菱电机于2017年11月共同成立；另一个是工业互联网联盟，由AT&amp;T、思科、通用电气、英特尔和IBM于2014年共同成立。</p>
+<p>未完待续……</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/blog/区块链/2018/12/25/区块链/区块链-1-区块链入门/" rel="next" title="区块链-1-区块链入门">
+                <i class="fa fa-chevron-left"></i> 区块链-1-区块链入门
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/blog/images/headphoto.jpg" alt="TitanRtx">
+            
+              <p class="site-author-name" itemprop="name">TitanRtx</p>
+              <p class="site-description motion-element" itemprop="description">Don't speak , show me the code !</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/blog/archives/">
+              
+                  <span class="site-state-item-count">12</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/blog/categories/index.html">
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/blog/tags/index.html">
+                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#前记："><span class="nav-number">1.</span> <span class="nav-text">前记：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#什么是雾计算？"><span class="nav-number">2.</span> <span class="nav-text">什么是雾计算？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#边缘计算的概念"><span class="nav-number">3.</span> <span class="nav-text">边缘计算的概念</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#为什么选择边缘计算？"><span class="nav-number">4.</span> <span class="nav-text">为什么选择边缘计算？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#边缘计算、雾计算的发展以及关系"><span class="nav-number">5.</span> <span class="nav-text">边缘计算、雾计算的发展以及关系</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">TitanRtx</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/blog/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/blog/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/blog/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/blog/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/blog/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/blog/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/blog/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/blog/lib/three/three.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/blog/lib/three/three-waves.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/blog/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/blog/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/blog/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/blog/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/blog/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/blog/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/blog/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+
+</body>
+
+</html>

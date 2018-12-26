@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/blog/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/blog/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/blog/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/blog/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/blog/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/blog/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/blog/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="TitanRtx 个人博客  物联网">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="Don&apos;t speak , show me the code !">
+<meta property="og:type" content="website">
+<meta property="og:title" content="TitanRtx Blog">
+<meta property="og:url" content="https://titanrtx.github.io/blog/page/5/index.html">
+<meta property="og:site_name" content="TitanRtx Blog">
+<meta property="og:description" content="Don&apos;t speak , show me the code !">
+<meta property="og:locale" content="zh-Hans">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="TitanRtx Blog">
+<meta name="twitter:description" content="Don&apos;t speak , show me the code !">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/blog/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://titanrtx.github.io/blog/page/5/">
+
+
+
+
+
+  <title>TitanRtx Blog</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+  page-home">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/blog/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">TitanRtx Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/blog/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            最新文章
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-asset">
+          <a href="/blog/资源/asset.html" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-file"></i> <br>
+            
+            参考资源
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/blog/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/blog/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/blog/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            所有文章
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-blockchain">
+          <a href="/blog/categories/区块链/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-chain"></i> <br>
+            
+            区块链
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-datascience">
+          <a href="/blog/categories/数据分析/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-area-chart"></i> <br>
+            
+            数据分析
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-iot">
+          <a href="/blog/categories/物联网学习之路/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-rocket"></i> <br>
+            
+            物联网学习之路
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://titanrtx.github.io/blog/blog/物联网学习之路/2018/12/19/物联网学习之路/物联网学习之路-7-传感器的发展与现状/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="TitanRtx">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/blog/images/headphoto.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="TitanRtx Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/blog/物联网学习之路/2018/12/19/物联网学习之路/物联网学习之路-7-传感器的发展与现状/" itemprop="url">物联网学习之路-7-传感器的发展与现状</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-19T22:42:59+09:00">
+                2018-12-19
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/blog/categories/物联网学习之路/" itemprop="url" rel="index">
+                    <span itemprop="name">物联网学习之路</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><div style="text-align:center">先放松一下吧！</div></p>
+<p><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=31179347&auto=1&height=66"></iframe> </p>
+<blockquote>
+<p>之前有过对传感器的介绍，今天主要讨论下传感器的分类及应用选型以及和智能家居的关系</p>
+</blockquote>
+<h2 id="传感器的分类"><a href="#传感器的分类" class="headerlink" title="传感器的分类"></a>传感器的分类</h2><h3 id="1、按输入量即测量对象的不同分："><a href="#1、按输入量即测量对象的不同分：" class="headerlink" title="1、按输入量即测量对象的不同分："></a>1、按输入量即测量对象的不同分：</h3><p>如输入量分别为：温度、压力、位移、速度、湿度、光线、气体等非电量时，则相应的传感器称为温度传感器、压力传感器、称重传感器等。</p>
+<p>这种分类方法明确地说明了传感器的用途，给使用者提供了方便，容易根据测量对象来选择所需要的传感器，缺点是这种分类方法是将原理互不相同的传感器归为一类，很难找出每种传感器在转换机理上有何共性和差异，因此，对掌握传感器的一些基本原理及分析方法是不利的。因为同一种型式的传感器，如压电式传感器，它可以用来测量机械振动中的加速度、速度和振幅等，也可以用来测量冲击和力，但其工作原理是一样的。</p>
+<p>这种分类方法把种类最多的物理量分为：基本量和派生量两大类．例如力可视为基本物理量，从力可派生出压力、重量，应力、力矩等派生物理量．当我们需要测量上述物理量时，只要采用力传感器就可以了。所以了解基本物理量和派生物理量的关系，对于系统使用何种传感器是很有帮助的。　</p>
+<h3 id="2、按工作-检测-原理分类"><a href="#2、按工作-检测-原理分类" class="headerlink" title="2、按工作(检测)原理分类　"></a>2、按工作(检测)原理分类　</h3><p>检测原理指传感器工作时所依据的物理效应、化学效应和生物效应等机理。有电阻式、电容式、电感式、压电式、电磁式、磁阻式、光电式、压阻式、热电式、核辐射式、半导体式传感器等。</p>
+<p>如根据变电阻原理，相应的有电位器式、应变片式、压阻式等传感器；如根据电磁感应原理，相应的有电感式、差压变送器、电涡流式、电磁式、磁阻式等传感器；如根据半导体有关理论，则相应的有半导体力敏、热敏、光敏、气敏、磁敏等固态传感器。</p>
+<p>这种分类方法的优点是便于传感器专业工作者从原理与设计上作归纳性的分析研究，避免了传感器的名目过于繁多，故最常采用。缺点是用户选用传感器时会感到不够方便。</p>
+<p>有时也常把用途和原理结合起来命名，如电感式位移传感器，压电式力传感器等，以避免传感器名目过于繁多．</p>
+<h3 id="3、按照传感器的结构参数在信号变换过程中是否发生变化可分为："><a href="#3、按照传感器的结构参数在信号变换过程中是否发生变化可分为：" class="headerlink" title="3、按照传感器的结构参数在信号变换过程中是否发生变化可分为："></a>3、按照传感器的结构参数在信号变换过程中是否发生变化可分为：</h3><p>a、物性型传感器：在实现信号的变换过程中，结构参数基本不变，而是利用某些物质材料(敏感元件)本身的物理或化学性质的变化而实现信号变换的。</p>
+<p>这种传感器一般没有可动结构部分，易小型化，故也被称作固态传感器，它是以半导体、电介质、铁电体等作为敏感材料的固态器件。如：热电偶、压电石英晶体、热电阻以及各种半导体传感器如力敏、热敏、湿敏、气敏、光敏元件等。　</p>
+<p>b、结构型传感器：依靠传感器机械结构的几何形状或尺寸(即结构参数)的变化而将外界被测参数转换成相应的电阻、电感、电容等物理量的变化，实现信号变换，从而检测出被测信号。</p>
+<p>如：电容式、电感式、应变片式、电位差计式等。</p>
+<h3 id="4、根据敏感元件与被测对象之间的能量关系-或按是否需外加能源-来分："><a href="#4、根据敏感元件与被测对象之间的能量关系-或按是否需外加能源-来分：" class="headerlink" title="4、根据敏感元件与被测对象之间的能量关系(或按是否需外加能源)来分："></a>4、根据敏感元件与被测对象之间的能量关系(或按是否需外加能源)来分：</h3><p>a、能量转换型(有源式、自源式、发电式)：在进行信号转换时不需要另外提供能量，直接由被测对象输入能量，把输入信号能量变换为另一种形式的能量输出使其工作。有源传感器类似一台微型发电机，它能将输入的非电能量转换成电能输出，传感器本身勿需外加电源，信号能量直接从被测对象取得。因此只要配上必要的放大器就能推动显示记录仪表。</p>
+<p>如：压电式、压磁式、电磁式、电动式、热电偶、光电池、霍尔元件、磁致伸缩式、电致伸缩式、静电式等传感器。</p>
+<p>这类传感器中，有一部分能量的变换是可逆的，也可以将电能转换为机械能或其它非电量。如压电式、压磁式、电动式传感器等。　</p>
+<p>b、能量控制型(无源式、他源式、参量式)：在进行信号转换时，需要先供给能量即从外部供给辅助能源使传感器工作，并且由被测量来控制外部供给能量的变化等。对于无源传感器，被测非电量只是对传感器中的能量起控制或调制作用，得通过测量电路将它变为电压或电流量，然后进行转换、放大，以推动指示或记录仪表。配用测量电路通常是电桥电路或谐振电路。</p>
+<p>如：电阻式、电容式、电感式、差动变压器式、涡流式、热敏电阻、光电管、光敏电阻、湿敏电阻、磁敏电阻等。</p>
+<h3 id="5、按输出信号的性质分："><a href="#5、按输出信号的性质分：" class="headerlink" title="5、按输出信号的性质分："></a>5、按输出信号的性质分：</h3><p>模拟式传感器：将被测非电量转换成连续变化的电压或电流，如要求配合数字显示器或数字计算机，需要配备模／数(A/D)转换装置。</p>
+<p>上面提到的传感器基本上属于模拟传感器。　</p>
+<p>b、数字式传感器：能直接将非电量转换为数字量，可以直接用于数字显示和计算，可直接配合计算机，具有抗干扰能力强，适宜距离传输等优点。</p>
+<p>目前这类传感器可分为脉冲、频率和数码输出三类。如光栅传感器等。</p>
+<h3 id="6、按照传感器与被测对象的关联方式-是否接触-可分为："><a href="#6、按照传感器与被测对象的关联方式-是否接触-可分为：" class="headerlink" title="6、按照传感器与被测对象的关联方式(是否接触)可分为："></a>6、按照传感器与被测对象的关联方式(是否接触)可分为：</h3><p>a、接触式：如：电位差计式、应变式、电容式、电感式等；</p>
+<p>b、非接触式：接触式的优点是传感器与被测对象视为一体，传感器的标定无须在使用现场进行，缺点是传感器与被测对象接触会对被测对象的状态或特性不可避免地产生或多或少的影响。非接触式则没有这种影响；</p>
+<p>非接触化测量可以消除传感器介入而使被测量受到的影响，提高测量的准确性，同时，可使传感器的使用寿命增加。但是非接触式传感器的输出会受到被测对象与传感器之间介质或环境的影响。因此传感器标定必须在使用现场进行。</p>
+<h3 id="7、按传感器构成来分："><a href="#7、按传感器构成来分：" class="headerlink" title="7、按传感器构成来分："></a>7、按传感器构成来分：</h3><p>a、基本型传感器：是一种最基本的单个变换装置。</p>
+<p>b、组合型传感器：是由不同单个变换装置组合而构成的传感器。</p>
+<p>c、应用型传感器：是基本型传感器或组合型传感器与其他机构组合而构成的传感器。</p>
+<p>例如：热电偶是基本型传感器，把它与红外线辐射转为热量的热吸收体组合成红外线辐射传感器，即一种组合传感器；把这种组合传感器应用于红外线扫描设备中，就是一种应用型传感器。</p>
+<h3 id="8、按作用形式来分："><a href="#8、按作用形式来分：" class="headerlink" title="8、按作用形式来分："></a>8、按作用形式来分：</h3><p>按作用形式可分为主动型和被动型传感器。</p>
+<p>主动型传感器又有作用型和反作用型，此种传感器对被测对象能发出一定探测信号，能检测探测信号在被测对象中所产生的变化，或者由探测信号在被测对象中产生某种效应而形成信号。检测探测信号变化方式的称为作用型，检测产生响应而形成信号方式的称为反作用型。雷达与无线电频率范围探测器是作用型实例，而光声效应分析装置与激光分析器是反作用型实例。</p>
+<p>被动型传感器只是接收被测对象本身产生的信号，如红外辐射温度计、红外摄像装置等　</p>
+<p>9、按传感器的特殊性来分：</p>
+<p>上面介绍的分类是传感器的基本类型，按特殊性可分以下类型：</p>
+<p>按检测功能可分为检测温度、压力、温度、流量计、流速、加速度、磁场、光通量等的传感器；</p>
+<p>按传感器工作的物理基础可分为机械式、电气式、光学式、液体式等；</p>
+<p>按转换现象的范围可分为化学传感器、电磁学传感器、力学传感器和光学传感器；</p>
+<p>按材料可分为金属、陶瓷、有机高分子材料、半导体传感器等；</p>
+<p>按应用领域分为工业，民用、科研、医疗，农用，军用等传感器；　</p>
+<p>按功能用途分为计测用、监视用、检查用，诊断用、控制用，分析用等传感器。</p>
+<h2 id="传感器与智能家居"><a href="#传感器与智能家居" class="headerlink" title="传感器与智能家居"></a>传感器与智能家居</h2><blockquote>
+<p>随着智能化技术的推广，智能家居领域获得了飞跃性的发展，越来越多的企业切入进来。在发展过程中，一些新技术逐渐渗入到智能家居领域的各个环节。其中，传感器凭借自身独特的优势，深入整个控制系统的“脉络”，对于智能家居飞速发展的作用非同小可。</p>
+</blockquote>
+<p>随着智能化技术的推广，智能家居领域获得了飞跃性的发展，越来越多的企业切入进来。在发展过程中，一些新技术逐渐渗入到智能家居领域的各个环节。其中，传感器凭借自身独特的优势，深入整个控制系统的“脉络”，对于智能家居飞速发展的作用非同小可。</p>
+<p>实现智能家居情景化 智能家居自动运行离不开传感器</p>
+<p>对于智能家居系统来说，传感技术的应用可以更直观、更实时的捕捉家庭内部的环境变化，通过大数据的上传与分析，指挥家庭内部设备的自动调节和响应，帮助智能家居由功能预设的智能遥控属性发展成根据人的行为自动运行的真正的智能家居。更高精度和功能集合的传感技术，会进一步提升智能家居系统和产品的应用体验。</p>
+<p>智能家居是个系统的产品概念。传感器是把传统家居设备如开关、面板、灯具、窗帘电机等结合起来的桥梁，通过各式各样的传感器，我们可以完美地实现智能家居的情景化，用户才能真正体验到智能家居带来的乐趣。所以说，传感技术的应用，让传统设备功能添加了新的“技能”，可以表现得更加智能。</p>
+<p>智能家居系统功能实现依赖传感技术 可有效减少人的参与</p>
+<p>对智能家居系统或产品而言，传感技术的应用，对传统的功能应用确实带来了一些改变。智能家居是IT技术(特别是计算机技术)/网络技术、控制技术向传统家电产业渗透发展的必然结果。我们通常所说的智能家居就是以住宅为平台，兼备建筑、网络通信、信息家电、设备自动化，集系统、结构、服务、管理为一体的高效、舒适、安全、便利、环保的居住环境。可以提供家电控制、照明控制、窗帘控制、远程控制、室内外遥控、防盗报警、以及可编程按需场景控制等多种功能和手段，使生活更加舒适、便利和安全，而这一切都要依赖前端的传感器技术来加以实现。</p>
+<p>智能系统需要依赖传感器的应用。目前看来，传感器的应用让智能从主观按键操作转为系统对局部的逻辑化自动操作，体验更便捷，有效地减少了人的参与，使智能更自然。多种类传感技术的出现能让智能家居较快地从现阶段需要较多人为干预的初级控制智能，转变到由传感器系统配合控制系统协同工作的中级传感智能，进而大大提升用户体验。</p>
+<h2 id="传感器目前在智能家居方面的应用"><a href="#传感器目前在智能家居方面的应用" class="headerlink" title="传感器目前在智能家居方面的应用"></a>传感器目前在智能家居方面的应用</h2><h4 id="温度传感器"><a href="#温度传感器" class="headerlink" title="温度传感器"></a>温度传感器</h4><p>温度传感器在智能家居中可以保证室温的恒定，是智能家居中必不可少的组成部分，在运用中，温度传感器可以根据季节的变化或者用户的需求来调整温度。</p>
+<p>在温度的测量中，通过温度传感器可以采集温度信息，在现代智能家居中，通常选择DS18B20温度传感器，其具有稳定性及性能强大的特点，在运用中，可以将数字信号转化成为电信号，通过计算机系统的控制，将温度的信息传递给计算机系统，继而通过中央控制体系传输给空调，实现智能家居的温度控制。</p>
+<p>厂商推荐：OMEGA工业测量，隶属于思百吉集团，OMEGA提供10万余种用于测量和控制温度、湿度、压力、应力、流量、液位、酸碱度及传导性的先进产品。OMEGA还为客户提供了完整的数据采集、电加热以及定制设计的产品。</p>
+<h4 id="湿度传感器"><a href="#湿度传感器" class="headerlink" title="湿度传感器"></a>湿度传感器</h4><p>在智能家居的控制中，对湿度的控制可以提升用户的生活质量，为用户提供良好的生活环境。在智能家居的湿度控制中，主要是通过湿度传感器来实现对湿度的控制。</p>
+<p>在现阶段的湿度传感器选择中，主要采用808H5V5集成湿度传感器，其可以显示空气湿度的具体变化，在集成系统内部，存在湿度传感器以及放大电路，可以将湿度信息转化成为电压信号传递给计算机系统，系统通过人为的湿度需求，将调整方案输送给烘干或者加湿器，从而提升智能家居的环境。可见，在智能家居中，通过湿度传感器，可以实现对湿度的控制，从而避免家居的损坏或者对人体的皮肤造成损伤。</p>
+<p>厂商推荐：赛亿凌科技</p>
+<p>北京赛亿凌科技有限公司是从事热工测量传感器及变送器销售的专业公司，能够为客户量身度体地提供各种测量方案和传感器的定制服务，公司的主要产品如下：铂电阻温度传感器、温度变送器、一体化温度变送器、热电偶温度传感器、压力变送器、液位变送器、温湿度变送器等。</p>
+<h4 id="温湿传感器"><a href="#温湿传感器" class="headerlink" title="温湿传感器"></a>温湿传感器</h4><p>在智能家居的控制中，温度计湿度的控制均为环境控制的重要指标，但是仅仅对单一指标进行控制，将会浪费较多的资源，且会延长计算时间，需要通过计算机的合成来进行分析。因而需要探究新型的传感器应用方式。</p>
+<p>温湿传感器可以实现对温度和湿度的同时调节，符合智能家居的理念，且具有体积小和功耗低等特点。在目前的智能家居设计中，通常采用STH10温湿传感器来控制室内的温度和湿度，STH10芯片可以同时采集温度和湿度信息，在独立系统中对两种物理变量进行分开计算，并且转化成为电信号传输到相应的控制终端，实现智能家居的控制目的。</p>
+<p>厂商推荐：深圳市世炬科技有限公司是一家集技术开发、生产、代理销售于一体的高科技公司。公司主要从事国内外著名传感控制产品的代理经销，代理销售的产品有压力、温度、湿度、气体、磁阻、加速度、流量等传感器，产品广泛应用于仪器仪表、汽车电子、家用电器、医疗设备、便携设备、军工设备、楼宇自控、现代化农业等行业。</p>
+<h4 id="气体浓度传感器"><a href="#气体浓度传感器" class="headerlink" title="气体浓度传感器"></a>气体浓度传感器</h4><p>气体浓度传感器是智能家居的重要检测手段，在居家生活中，可燃气体以及污染气体是影响人们健康及生命的因素，在智能家居中，通过气体浓度传感器，可以实现对危险气体的分析，继而可以采取针对性的控制策略。</p>
+<p>在现代智能家居中，主要是通过TG S109气体浓度传感器进行监测，在监测的过程中，用户仅仅需要将检测气体的合理指标输入到计算机系统中，系统在采集相关信息后，即可对两种气体进行对比分析，一旦气体浓度超过范围，将会发出警报并且及时通过油烟机来清除气体。在智能家居中，通过气体浓度传感器的应用，可以实现对换气扇以及油烟机的调控，从而提升智能家居的享受效果。</p>
+<p>厂商推荐：TE：提供适用于电动汽车、航空航天、数字化工厂和智能家居的解决方案。TE的创新助力于拯救生命的医疗护理领域，以及建设可持续性社区、高效公用设施网络和全球通信基础设施。TE与客户合作生产高度工程化的连接和传感产品。</p>
+<h4 id="图像传感器"><a href="#图像传感器" class="headerlink" title="图像传感器"></a>图像传感器</h4><p>在智能家居中，图像传感器同样是重要的应用元件之一。主要是由于在现代建设中，需要通过监控设备来实现内部的监控以及住宅周边的监控，在传统的监控手段中，主要是通过摄像头来进行监控，而无法将信息传递给用户，一旦监控系统被破坏，将会导致用户承担较大的损失。而在智能家居系统中，通过PC端的监控，可以将信息发送给用户的手机或者电脑，实现远程监控，在在智能监控中，利用图像传感器，可以进行光电转换，其主要是由CCD和CMOS传感器组成，通过其可以制作数字摄像机，实现对智能家居的全面控制。</p>
+<p>厂商推荐：基恩士作为传感器、测量系统、激光刻印机、显微系统以及单机式影像系统的全球知名供应商，KEYENCE 不断推动工厂自动化的创新与发展。</p>
+<h4 id="光电传感器"><a href="#光电传感器" class="headerlink" title="光电传感器"></a>光电传感器</h4><p>在传统的生活方式中，人们在运用水源、电源以及光源等情况时，均需要手动设置开关来完成，而在智能家居中，通过光电传感器，可以实现对智能家居的全面控制。利用光阻可以设计自动照明灯，通过红外线感应系统，可以实现对居家的便利化照明，不需要人为进行控制。另外，在光电传感器的运用中，通过红外线传感器可以实现对水龙头、温度计湿度等多种条件的控制，这样可以节约相应的资源，且会提升用户的享受。</p>
+<p>厂商推荐：神武传感器</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/blog/page/4/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/blog/">1</a><span class="space">&hellip;</span><a class="page-number" href="/blog/page/4/">4</a><span class="page-number current">5</span><a class="page-number" href="/blog/page/6/">6</a><span class="space">&hellip;</span><a class="page-number" href="/blog/page/12/">12</a><a class="extend next" rel="next" href="/blog/page/6/"><i class="fa fa-angle-right"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/blog/images/headphoto.jpg" alt="TitanRtx">
+            
+              <p class="site-author-name" itemprop="name">TitanRtx</p>
+              <p class="site-description motion-element" itemprop="description">Don't speak , show me the code !</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/blog/archives/">
+              
+                  <span class="site-state-item-count">12</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/blog/categories/index.html">
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/blog/tags/index.html">
+                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">TitanRtx</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/blog/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/blog/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/blog/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/blog/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/blog/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/blog/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/blog/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/blog/lib/three/three.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/blog/lib/three/three-waves.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/blog/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/blog/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/blog/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/blog/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/blog/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+
+</body>
+
+</html>

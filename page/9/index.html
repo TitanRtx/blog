@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/blog/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/blog/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/blog/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/blog/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/blog/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/blog/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/blog/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="TitanRtx 个人博客  物联网">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="Don&apos;t speak , show me the code !">
+<meta property="og:type" content="website">
+<meta property="og:title" content="TitanRtx Blog">
+<meta property="og:url" content="https://titanrtx.github.io/blog/page/9/index.html">
+<meta property="og:site_name" content="TitanRtx Blog">
+<meta property="og:description" content="Don&apos;t speak , show me the code !">
+<meta property="og:locale" content="zh-Hans">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="TitanRtx Blog">
+<meta name="twitter:description" content="Don&apos;t speak , show me the code !">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/blog/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://titanrtx.github.io/blog/page/9/">
+
+
+
+
+
+  <title>TitanRtx Blog</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+  page-home">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/blog/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">TitanRtx Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/blog/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            最新文章
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-asset">
+          <a href="/blog/资源/asset.html" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-file"></i> <br>
+            
+            参考资源
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/blog/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/blog/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/blog/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            所有文章
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-blockchain">
+          <a href="/blog/categories/区块链/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-chain"></i> <br>
+            
+            区块链
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-datascience">
+          <a href="/blog/categories/数据分析/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-area-chart"></i> <br>
+            
+            数据分析
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-iot">
+          <a href="/blog/categories/物联网学习之路/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-rocket"></i> <br>
+            
+            物联网学习之路
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://titanrtx.github.io/blog/blog/物联网学习之路/2018/12/07/物联网学习之路/物联网学习之路-3-传感器与传感网/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="TitanRtx">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/blog/images/headphoto.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="TitanRtx Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/blog/物联网学习之路/2018/12/07/物联网学习之路/物联网学习之路-3-传感器与传感网/" itemprop="url">物联网学习之路-3-传感器与传感网、物联网、泛在网络</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-07T17:36:51+09:00">
+                2018-12-07
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/blog/categories/物联网学习之路/" itemprop="url" rel="index">
+                    <span itemprop="name">物联网学习之路</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><div style="text-align:center">先放松一下吧！</div></p>
+<p><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=31179347&auto=1&height=66"></iframe> </p>
+<h2 id="传感器介绍"><a href="#传感器介绍" class="headerlink" title="传感器介绍"></a>传感器介绍</h2><p>传感器（英文名称：transducer/sensor）是一种检测装置，能感受到被测量的信息，并能将感受到的信息，按一定规律变换成为电信号或其他所需形式的信息输出，以满足信息的传输、处理、存储、显示、记录和控制等要求。<br>传感器的特点包括：微型化、数字化、智能化、多功能化、系统化、网络化。它是实现自动检测和自动控制的首要环节。传感器的存在和发展，让物体有了触觉、味觉和嗅觉等感官，让物体慢慢变得活了起来。通常根据其基本感知功能分为热敏元件、光敏元件、气敏元件、力敏元件、磁敏元件、湿敏元件、声敏元件、放射线敏感元件、色敏元件和味敏元件等十大类。</p>
+<h2 id="传感器的发展历程大体可以分为以下三个阶段："><a href="#传感器的发展历程大体可以分为以下三个阶段：" class="headerlink" title="传感器的发展历程大体可以分为以下三个阶段："></a>传感器的发展历程大体可以分为以下三个阶段：</h2><h3 id="第一阶段：结构型传感器"><a href="#第一阶段：结构型传感器" class="headerlink" title="第一阶段：结构型传感器"></a>第一阶段：结构型传感器</h3><p>主要利用结构参量变化来感受和转化信号。例如：电阻应变式传感器，它是利用金属材料发生弹性形变时电阻的变化来转化电信号的。</p>
+<h3 id="第二阶段：固体传感器"><a href="#第二阶段：固体传感器" class="headerlink" title="第二阶段：固体传感器"></a>第二阶段：固体传感器</h3><p>由70年代开始发展起来，这种传感器由半导体、电介质、磁性材料等固体元件构成，是利用材料某些特性制成的。例如：利用热电效应、霍尔效应、光敏效应，分别制成热电偶传感器、霍尔传感器、光敏传感器等。</p>
+<p>70年代后期，随着集成技术、分子合成技术、微电子技术及计算机技术的发展，出现集成传感器。集成传感器包括2种类型：传感器本身的集成化和传感器与后续电路的集成化。例如：电荷藕合器件，集成温度传感器AD590集成霍尔传感器UGN3501等。这类传感器主要具有成本低、可靠性高性能好、接口灵活等特点集成传感器发展非常迅速，现已占传感器市场的2/3左右，它正向着低价格、多功能和系列化方向发展。</p>
+<h3 id="第三阶段：智能传感器"><a href="#第三阶段：智能传感器" class="headerlink" title="第三阶段：智能传感器"></a>第三阶段：智能传感器</h3><p>由80年代发展起来的，所谓智能传感器是指其对外界信息具有一定检测、自诊断、数据处理以及自适应能力，是微型计算机技术与检测技术相结合的产物。80年代智能化测量主要以微处理器为核心，把传感器信号调节电路微计算机、存贮器及接口集成到一块芯片上，使传感器具有一定的人工智能。</p>
+<p>90年代智能化测量技术有了进一步的提高，在传感器一级水平实现智能化，使其具有自诊断功能、记忆功能、多参量测量功能以及联网通信功能等。</p>
+<p>关于传感器的详细分类  可以参考百度百科 ：<a href="https://baike.baidu.com/item/%E4%BC%A0%E6%84%9F%E5%99%A8/26757?fr=aladdin" target="_blank" rel="noopener">传送门</a></p>
+<h2 id="传感网"><a href="#传感网" class="headerlink" title="传感网"></a>传感网</h2><p>传感网的定义为随机分布的集成有传感器、数据处理单元和通信单元的微小节点，通过自组织的方式构成的无线网络。</p>
+<h3 id="传感网功能"><a href="#传感网功能" class="headerlink" title="传感网功能"></a>传感网功能</h3><p>借助于节点中内置的传感器测量周边环境中的热、红外、声纳、雷达和地震波信号，从而探测包括温度、湿度、噪声、光强度、压力、土壤成分、移动物体的大小、速度和方向等物质现象。</p>
+<p>以互联网为代表的计算机网络技术是二十世纪计算机科学的一项伟大成果，它给我们的生活带来了深刻的变化，然而在，网络功能再强大，网络世界再丰富，也终究是虚拟的，它与我们所生活的现实世界还是相隔的，在网络世界中，很难感知现实世界，很多事情还是不可能的，时代呼唤着新的网络技术。传感网络正是在这样的背景下应运而生的全新网络技术，它综合了传感器、低功耗、通讯以及微机电等等技术，可以预见，在不久的将来，传感网络将给我们的生活方式带来革命性的变化。</p>
+<h3 id="传感网与物联网关系"><a href="#传感网与物联网关系" class="headerlink" title="传感网与物联网关系"></a>传感网与物联网关系</h3><p>通过感知识别技术，让物品“开口说话、发布信息”，是融合物理世界和信息世界的重要一环，是物联网区别于其他网络的最独特的部分。物联网的“触手”是位于感知识别层的大量信息生成设备，包括RFID、传感网、定位系统等。在《物联网导论》一书中，作者认为传感网所感知的数据是物联网海量信息的重要来源之一。且中国物联网校企联盟认为，传感网的飞速发展对于物联网领域的进步，实现物联化具有重要的意义。</p>
+<p>自2009年8月温总理提出“感知中国”以来，物联网被正式列为国家五大新兴战略性产业之一，写入“政府工作报告”，物联网在中国受到了全社会极大的关注，其受关注程度是在美国、欧盟、以及其他各国家不可比拟的。</p>
+<p>有许多人把传感网的含义扩大为包括物联网，这样的说法有一定道理，温总理“感知中国”的讲话起始于对传感网的关注，但目前看来，人们更趋向于用物联网这个词（见右边百度指数图），物联网的范围大于传感网，于是在很多场合出现了“物联网（传感网）”的提法，而且这似乎成了“官方”的提法。</p>
+<p><img src="/images/IoT/3/IoT&amp;SensorNet.jpg" alt="图片"></p>
+<p>从图中可以看出，物联网和M2M的使用频率比传感网要高，英文的Google趋势图也显示了同样的结果。 这大概也是物联网，而不是传感网被写入政府工作报告原因吧。</p>
+<p><img src="/images/IoT/3/fourBigTech.jpg" alt="四大应用图片"></p>
+<p>在《物联网:技术、应用、标准和商业模式》一书中，作者把传感网列为物联网的4大技术和应用之一，得到业界一部分人的认同。</p>
+<h2 id="泛在网络—无所不在的网络"><a href="#泛在网络—无所不在的网络" class="headerlink" title="泛在网络—无所不在的网络"></a>泛在网络—无所不在的网络</h2><h3 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h3><p> 泛在网络来源于拉丁语Ubiquitous，从字面上看就是广泛存在的，无所不在的网络。也就是人置身于无所不在的网络之中，实现人在任何时间、地点，使用任何网络与任何人与物的信息交换，基于个人和社会的需求，利用现有网络技术和新的网络技术，为个人和社会提供泛在的，无所不含的信息服务和应用。</p>
+<h3 id="应用领域"><a href="#应用领域" class="headerlink" title="应用领域"></a>应用领域</h3><p> 随着信道容量和通信速度的提高，电信业务飞速发展，但最重要的不是通信的速度，而是速度提高下带来的各种新的可能。如一座山峰，除海拔高度外，对人们来说更重要的是在这样海拔高度的山区，会有何种气象变化和什么样的风景？泛在网络作为一种应用概念，把传统电信网络的概念扩展到更为宽广的领域，从而产生了惊人的应用可能。这些新的应用已经并正在得到越来越广泛的技术运营和市场支持。</p>
+<h4 id="从“海拔”到“风景”"><a href="#从“海拔”到“风景”" class="headerlink" title="从“海拔”到“风景”"></a>从“海拔”到“风景”</h4><p>提到泛在网络(UbiquitousNetwork)，业界普遍的说法是“无所不在”。泛在网络的概念把电信技术的速度“海拔”转化成了更多的“风景”，也就是应用概念，但专家们现在尚且无法给出一个有关“泛在网络”概念的准确内涵和外延。与传统电信网络相比，泛在网络至少有三条显著区别：从人和人之间的网络到人和物、物和物之间的网络;从有许可的网络到无许可的网络;从单一的网络到融合的网络。</p>
+<h3 id="泛在网络依赖的技术"><a href="#泛在网络依赖的技术" class="headerlink" title="泛在网络依赖的技术"></a>泛在网络依赖的技术</h3><p>有几类重要技术的发展支持了泛在网络这一应用概念：</p>
+<h4 id="M2M-MachinetoMachine"><a href="#M2M-MachinetoMachine" class="headerlink" title="M2M(MachinetoMachine)"></a>M2M(MachinetoMachine)</h4><p>M2M一般认为是机器到机器的无线数据传输，有时也包括人对机器和机器对人的数据传输。有多种技术支持M2M网络中的终端之间的传输协议。目前主要有IEEE802.11a/b/gWLAN和Zigbee。二者都工作在2.4G的自主频段，在M2M的通信方面各有优势。采用WLAN方式的传输，容易得到较高的数据速率，也容易得到现有计算机网络的支持，但采用Zigbee协议的终端更容易在恶劣的环境下完成任务。</p>
+<h4 id="传感器网络-SensorNetwork"><a href="#传感器网络-SensorNetwork" class="headerlink" title="传感器网络(SensorNetwork)"></a>传感器网络(SensorNetwork)</h4><p>传感器网络是由使用传感器的器件组成的在空间上呈分布式的无线自治网络，它常用来感知环境参数，如温度、震动等等。和互联网一样，传感器网络最早是从军队的应用环境演化而来，目前也应用在很多民用领域。</p>
+<h4 id="近程通信和RFID"><a href="#近程通信和RFID" class="headerlink" title="近程通信和RFID"></a>近程通信和RFID</h4><p>近程通信(NearFieldCommunication)是新兴的短距离连接技术，从很多无接触式的认证和互联技术演化而来，RFID是其中一个重要技术。当产品嵌入NFC技术时，将大大简化很多消费电子设备的使用过程，帮助客户快速连接，分享或传输数据，给客户带来很多简便性。</p>
+<p>近程通信技术工作在13.5M，以424KB/S交换数据，当两个NFC兼容的物品接近到40厘米时就可以进行数据传输，可读可写。NFC技术与很多现有的技术兼容.如蓝牙，和无线局域网、近程通信技术、近程通信也遵从ISO，ECMA和ETSI等国际标准。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/blog/page/8/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/blog/">1</a><span class="space">&hellip;</span><a class="page-number" href="/blog/page/8/">8</a><span class="page-number current">9</span><a class="page-number" href="/blog/page/10/">10</a><span class="space">&hellip;</span><a class="page-number" href="/blog/page/12/">12</a><a class="extend next" rel="next" href="/blog/page/10/"><i class="fa fa-angle-right"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/blog/images/headphoto.jpg" alt="TitanRtx">
+            
+              <p class="site-author-name" itemprop="name">TitanRtx</p>
+              <p class="site-description motion-element" itemprop="description">Don't speak , show me the code !</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/blog/archives/">
+              
+                  <span class="site-state-item-count">12</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/blog/categories/index.html">
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/blog/tags/index.html">
+                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">TitanRtx</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/blog/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/blog/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/blog/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/blog/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/blog/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/blog/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/blog/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/blog/lib/three/three.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/blog/lib/three/three-waves.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/blog/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/blog/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/blog/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/blog/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/blog/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+
+</body>
+
+</html>

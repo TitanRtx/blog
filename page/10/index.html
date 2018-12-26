@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/blog/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/blog/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/blog/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/blog/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/blog/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/blog/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/blog/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="TitanRtx 个人博客  物联网">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="Don&apos;t speak , show me the code !">
+<meta property="og:type" content="website">
+<meta property="og:title" content="TitanRtx Blog">
+<meta property="og:url" content="https://titanrtx.github.io/blog/page/10/index.html">
+<meta property="og:site_name" content="TitanRtx Blog">
+<meta property="og:description" content="Don&apos;t speak , show me the code !">
+<meta property="og:locale" content="zh-Hans">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="TitanRtx Blog">
+<meta name="twitter:description" content="Don&apos;t speak , show me the code !">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/blog/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://titanrtx.github.io/blog/page/10/">
+
+
+
+
+
+  <title>TitanRtx Blog</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+  page-home">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/blog/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">TitanRtx Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/blog/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            最新文章
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-asset">
+          <a href="/blog/资源/asset.html" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-file"></i> <br>
+            
+            参考资源
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/blog/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/blog/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/blog/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            所有文章
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-blockchain">
+          <a href="/blog/categories/区块链/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-chain"></i> <br>
+            
+            区块链
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-datascience">
+          <a href="/blog/categories/数据分析/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-area-chart"></i> <br>
+            
+            数据分析
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-iot">
+          <a href="/blog/categories/物联网学习之路/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-rocket"></i> <br>
+            
+            物联网学习之路
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://titanrtx.github.io/blog/blog/物联网学习之路/2018/11/29/物联网学习之路/物联网学习之路-2-物联网参考体系架构学习/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="TitanRtx">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/blog/images/headphoto.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="TitanRtx Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/blog/物联网学习之路/2018/11/29/物联网学习之路/物联网学习之路-2-物联网参考体系架构学习/" itemprop="url">物联网学习之路-2-"物联网参考体系架构学习(GB33474-2016)"</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-30T00:11:56+09:00">
+                2018-11-30
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/blog/categories/物联网学习之路/" itemprop="url" rel="index">
+                    <span itemprop="name">物联网学习之路</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><div style="text-align:center">先放松一下吧！</div></p>
+<p><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=31179347&auto=1&height=66"></iframe> </p>
+<h2 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h2><p>&emsp;&emsp;2018年8月30日，ISO/IEC JTC 1/SC 41（物联网及相关技术分技术委员会）标准项目ISO/IEC 30141：2018《物联网 参考体系结构》正式发布（以下简称33474）。</p>
+<p>&emsp;&emsp;该国际提案于2013年9月由中国电子标准化研究院（以下简称“电子标准院”）和无锡物联网产业研究院联合提出，在国家标准化管理委员会、工业和信息化部等相关部门的指导下，经历了5年的努力推进，最终获得了突破性的成果。体系架构标准的制定历来都是各领域标准化工作的必争之地和制高点，物联网体系架构标准由我国主导提出并制定，体现了我国在物联网国际标准化领域的技术领先优势。<strong>在制定物联网总体架构国际标准的同时，由全国信息技术标准化技术委员会归口，国家物联网基础标准工作组组织编写的国家标准GB/T 33474-2016《物联网 参考体系结构》于2016年先于国际标准发布。</strong></p>
+<p>&emsp;&emsp;该国际标准规定了物联网系统特性、概念模型、参考模型、参考体系结构视图（功能视图、系统视图、网络视图、使用视图等），以及物联网可信性。该国际标准的发布将为全球物联网实现提供体系架构、参考模型的总体指导，对促进国内外物联网产业的快速、健康发展具有重要意义。</p>
+<h2 id="个人的话"><a href="#个人的话" class="headerlink" title="个人的话"></a>个人的话</h2><p>&emsp;&emsp;从这个中可以看到我国在物联网方向在国际中的地位 ，同时， 那么我国提出的这个指导物联网工程的标准究竟的内容是什么 ，很多内容都在说物联网的六域模型， 下面由我为您解读一下。</p>
+<p>附 ： <a href="http://www.doc88.com/p-5631388677066.html" target="_blank" rel="noopener">word文档在线参考(来自道客巴巴)</a></p>
+<p><a href="/pdf/GBT33474物联网参考体系结构.pdf">pdf下载地址</a></p>
+<h2 id="我的阅读心得："><a href="#我的阅读心得：" class="headerlink" title="我的阅读心得："></a>我的阅读心得：</h2><h4 id="目录部分"><a href="#目录部分" class="headerlink" title="目录部分"></a>目录部分</h4><p><img src="/images/IoT/2/index.png" alt="目录"></p>
+<p>&emsp;目录一般能体现出设计的思路， 可以看到几个重要的标题：</p>
+<ol start="6">
+<li><strong>物联网概念模型</strong></li>
+<li><strong>物联网系统参考体系结构</strong></li>
+<li><strong>物联网通信参考体系结构</strong></li>
+<li><strong>物联网信息参考体系结构</strong></li>
+</ol>
+<h4 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h4><p>接下来有一段重要的引言：<br><img src="/images/IoT/2/yinyan.png" alt="yinyan"></p>
+<h4 id="术语和定义部分"><a href="#术语和定义部分" class="headerlink" title="术语和定义部分"></a>术语和定义部分</h4><blockquote>
+<p>为了大家方便以及我的记忆 ， 我还是手抄下来吧</p>
+</blockquote>
+<ol>
+<li><p>域 domain</p>
+<blockquote>
+<p>具有特定目的的实体集合<br>注： 网联网概念模型中包含的域有 : 感知控制域、目标对象域、用户域、运维管控域、资源交换域、服务提供域</p>
+</blockquote>
+</li>
+</ol>
+<ol start="2">
+<li><p>物联网概念模型</p>
+<blockquote>
+<p>对物联网系统的高度抽象和模型化表现</p>
+</blockquote>
+</li>
+<li><p>物联网参考体系结构</p>
+<blockquote>
+<p>对物联网系统的整体结构、组成部分、不同部分之间的关系 的描述</p>
+</blockquote>
+</li>
+<li><p>物联网系统参考体系结构</p>
+<blockquote>
+<p>从系统组成的角度描述物联网主要实体以及实体之间关系的参考结构</p>
+</blockquote>
+</li>
+<li><p>物联网通信参考体系结构</p>
+<blockquote>
+<p>从网络通信的角度描述物联网系统各域的实体以及实体间关系的参考体系结构</p>
+</blockquote>
+</li>
+<li><p>物联网信息参考体系结构</p>
+<blockquote>
+<p>从信息和信息交换的角度描述物联网系统各域的实体间关系的参考体系结构</p>
+</blockquote>
+</li>
+<li><p>数据通信类接口</p>
+<blockquote>
+<p>通过无线或有线通信链路实现设备之间信息交互的接口</p>
+</blockquote>
+</li>
+<li><p>非数据通信类接口</p>
+<blockquote>
+<p>通过获取对象的生物、物理、化学等属性,实现设备与对象之间绑定关系的接口</p>
+</blockquote>
+</li>
+<li><p>物联网基础服务</p>
+<blockquote>
+<p>为物联网业务服务提供的基础支撑服务</p>
+</blockquote>
+</li>
+<li><p>物联网业务服务</p>
+<blockquote>
+<p>提供面向物联网某类特定用户需求的业务服务</p>
+</blockquote>
+</li>
+<li><p>感知数据</p>
+<blockquote>
+<p>通过数据采集获取的原始数据或者在此基础上进行加工处理的表征对象信息的数据统称</p>
+</blockquote>
+</li>
+<li><p>控制数据</p>
+<blockquote>
+<p>作用于对象的执行控制操作的数据</p>
+</blockquote>
+</li>
+<li><p>感知对象</p>
+<blockquote>
+<p>物联网用户期望获取信息的对象</p>
+</blockquote>
+</li>
+<li><p>控制对象</p>
+<blockquote>
+<p>物联网用户期望执行操控的对象</p>
+</blockquote>
+</li>
+<li><p>传感器网络节点</p>
+<blockquote>
+<p>传感器网络中各种功能单元的统称 ，包括传感器节点，传感器网网关等设备</p>
+</blockquote>
+</li>
+<li><p>基础服务数据</p>
+<blockquote>
+<p>通过对不同类别数据进行加工处理生成的具备语义和格式统一的数据</p>
+</blockquote>
+</li>
+<li><p>业务融合数据</p>
+<blockquote>
+<p>以对象为中心，将关联的基础服务数据的封装整合形成的数据</p>
+</blockquote>
+</li>
+<li><p>业务服务数据</p>
+<blockquote>
+<p>对基础服务数据、业务融合数据等进行加工处理生成的面向业务服务的数据</p>
+</blockquote>
+</li>
+</ol>
+<h2 id="物联网概念模型"><a href="#物联网概念模型" class="headerlink" title="物联网概念模型"></a>物联网概念模型</h2><p><img src="/images/IoT/2/6yu.png" alt="6域模型"></p>
+<h4 id="域的描述"><a href="#域的描述" class="headerlink" title="域的描述"></a>域的描述</h4><ul>
+<li><p>用户域</p>
+<blockquote>
+<p>用户域是不同类型物联网用户和用户系统的实体集合 ，物联网用户可通过用户系统及其他域的实体获取物理世界对象的感知和操控服务</p>
+</blockquote>
+</li>
+<li><p>目标对象域</p>
+<blockquote>
+<p>目标对象域是物联网用户期望获取相关信息或执行相关操作的对象实体集合， 包括感知对象和控制对象。 感知对象是用户期望获取信息的对象， 控制对象使用户期望执行操控的对象 。 感知对象和控制对象可与感知控制域的实体（如传感网系统、RFID识别系统、智能化设备接口系统）以非数据通讯类接口或者数据通信类接口的方式进行关联，实现物理世界和虚拟世界的接口绑定。</p>
+</blockquote>
+</li>
+<li><p>感知控制域</p>
+<blockquote>
+<p>感知控制域是各类获取感知对象信息与操控控制对象的软硬件的实体集合。感知控制域可实现针对物理世界对象的本地化感知、协同和操控，并为其他域提供远程管理和服务的接口。</p>
+</blockquote>
+</li>
+<li><p>服务提供域</p>
+<blockquote>
+<p>服务提供域是实现物联网基础服务和业务服务的软硬件系统实体集合。服务提供域可以实现对感知数据、控制数据、及服务关联数据的加工处理和协同，为物联网用户提供对物理世界对象的感知和操控服务的接口。</p>
+</blockquote>
+</li>
+<li><p>运维管控域</p>
+<blockquote>
+<p>运维管控域是实现物联网运行维护和法规符合性监管的软硬件系统的实体集合。运维管控域可保障物联网的设备和系统的安全、可靠运行，及保障物联网系统中实体及其行为与相关法律规则等的符合性。</p>
+</blockquote>
+</li>
+<li><p>资源交换域</p>
+<blockquote>
+<p>资源交换域是实现物联网系统与外部系统间信息资源的共享与交换，以及实现物联网系统信息和服务集中交易的软硬件实体集合。资源交换域可获取物联网服务所需外部信息资源，也可为外部系统提供所需的物联网系统的信息资源，以及为物联网系统中的信息源、服务流、资金流的交换提供保障。</p>
+</blockquote>
+</li>
+</ul>
+<h4 id="其中的关联关系"><a href="#其中的关联关系" class="headerlink" title="其中的关联关系"></a>其中的关联关系</h4><p><img src="/images/IoT/2/guanlian.png" alt="关联关系"></p>
+<p>其中数字序号代表的是六域模型图中的节点之间边的标号：</p>
+<p><img src="/images/IoT/2/model.png" alt="模型"></p>
+<h4 id="物联网系统参考体系结构、物联网通信参考体系结构、物联网信息参考体系结构"><a href="#物联网系统参考体系结构、物联网通信参考体系结构、物联网信息参考体系结构" class="headerlink" title="物联网系统参考体系结构、物联网通信参考体系结构、物联网信息参考体系结构"></a>物联网系统参考体系结构、物联网通信参考体系结构、物联网信息参考体系结构</h4><p>&emsp;&emsp;这些部分讲的是分别从系统组成角度、实现物体间的互联互通的角度、物联网应用及其数据流角度去描述一个物联网系统的实现， 感兴趣的自己看吧 ， 好长呀 ， 以后补。</p>
+<h4 id="我的思考"><a href="#我的思考" class="headerlink" title="我的思考"></a>我的思考</h4><p>&emsp;&emsp;在阅读33474之前，我大部分是参考着刘平安的《物联网导论》这本书， 和网络上搜到差不多，对物联网的描述是四层模型：</p>
+<p><img src="/images/IoT/2/cengci.png" alt="四层架构"></p>
+<p>&emsp;&emsp;四层模型用简约的分层方式把物联网应用分成四个层次，而33474提出的“六域模型”则是对物联网系统或者一个物联网应用实现的具体表述，四层模型简单的提出了物联网各个层面的联系，而六域模型则是对物联网系统的更深层次的实现解读。物联网四层模型有助于对 <strong>物联网发展的理解</strong>，六域模型则是<strong>实现</strong>一个物联网系统的<strong>具体参考</strong>。</p>
+<h2 id="附录A的内容"><a href="#附录A的内容" class="headerlink" title="附录A的内容"></a>附录A的内容</h2><p>&emsp;&emsp;在附录A中，33474描述了物联网技术的框架，把物联网设计的主要技术分为感知、网络、应用和公共技术四个部分，并列了一些主要采用的技术<br><img src="/images/IoT/2/kuangjia.png" alt="技术框架"></p>
+<h4 id="物联网技术框架和概念模型的对应关系"><a href="#物联网技术框架和概念模型的对应关系" class="headerlink" title="物联网技术框架和概念模型的对应关系"></a>物联网技术框架和概念模型的对应关系</h4><p>&emsp;&emsp;物联网概念模型各个域内的实体基于物联网技术框架中各种技术的应用，因此，物联网技术框架和物联网概念模型的各个域有确切的对应关系:</p>
+<p><img src="/images/IoT/2/duiying.png" alt="对应关系"></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/blog/page/9/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/blog/">1</a><span class="space">&hellip;</span><a class="page-number" href="/blog/page/9/">9</a><span class="page-number current">10</span><a class="page-number" href="/blog/page/11/">11</a><a class="page-number" href="/blog/page/12/">12</a><a class="extend next" rel="next" href="/blog/page/11/"><i class="fa fa-angle-right"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/blog/images/headphoto.jpg" alt="TitanRtx">
+            
+              <p class="site-author-name" itemprop="name">TitanRtx</p>
+              <p class="site-description motion-element" itemprop="description">Don't speak , show me the code !</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/blog/archives/">
+              
+                  <span class="site-state-item-count">12</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/blog/categories/index.html">
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/blog/tags/index.html">
+                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">TitanRtx</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/blog/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/blog/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/blog/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/blog/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/blog/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/blog/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/blog/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/blog/lib/three/three.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/blog/lib/three/three-waves.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/blog/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/blog/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/blog/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/blog/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/blog/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+
+</body>
+
+</html>
